@@ -9,14 +9,13 @@ import org.springframework.kafka.config.TopicBuilder;
 
 @Configuration
 public class KafkaConfig {
-
 	
 	@Bean
 	NewTopic createTopic() {
-		return TopicBuilder.name("prodcut-create-events-topic")
+		return TopicBuilder.name("product-create-events-topic")
 		.partitions(3)
-		.replicas(3)
-		.configs(Map.of("main.insyc.replicas","2"))
+		.replicas(1)
+		.configs(Map.of("min.insync.replicas","1"))
 		.build();
 	}
 	
