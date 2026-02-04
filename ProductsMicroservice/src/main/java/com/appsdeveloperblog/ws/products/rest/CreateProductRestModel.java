@@ -1,4 +1,4 @@
-package com.appsdeveloperblog.ws.products;
+package com.appsdeveloperblog.ws.products.rest;
 
 import java.math.BigDecimal;
 
@@ -8,7 +8,7 @@ public class CreateProductRestModel {
     private BigDecimal price;
     private Integer quantity;
 
-	public String getTitle() {
+    public String getTitle() {
 		return title;
 	}
 	public void setTitle(String title) {
@@ -26,7 +26,7 @@ public class CreateProductRestModel {
 	public void setQuantity(Integer quantity) {
 		this.quantity = quantity;
 	}
-    
 
+    
 }
 
