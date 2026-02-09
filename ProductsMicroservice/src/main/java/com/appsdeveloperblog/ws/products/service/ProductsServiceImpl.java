@@ -45,7 +45,8 @@ public class ProductsServiceImpl implements IProductService {
             }
         });
 
-        future.join();
+        LOGGER.info("Returning product id");
+
 
         return productId;
 	}    
